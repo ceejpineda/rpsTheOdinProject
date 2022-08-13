@@ -1,0 +1,29 @@
+html, body{
+    margin: 0;
+    height: 100%;
+} 
+.body{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+}
+.instruction{
+    text-align: center;
+}
+.choices{
+    display: flex;
+    gap: 24px;
+}
+.rps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    text-align: center;
+}
