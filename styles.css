@@ -1,6 +1,7 @@
 html, body{
     margin: 0;
     height: 100%;
+    background-color: #D4F1F4
 } 
 .body{
     height: 100%;
@@ -27,3 +28,26 @@ html, body{
 .footer{
     text-align: center;
 }
+.img{
+    height: 200px;
+    width: 200px; x
+    padding: 20px;
+}
+button{
+    padding: 20px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color:#189AB4;
+    box-shadow:5px 10px #05445E;
+    background-color: #75E6DA;
+    transition: all 50ms ease-in-out;
+}
+button:hover{
+    background-color: #52a39b;
+    cursor:pointer;
+}
+button:active{
+    transform: scale(0.8);
+}
+
+/*  */

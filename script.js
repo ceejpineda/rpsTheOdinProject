@@ -6,14 +6,7 @@ function getComputerChoice(){
     choice = Math.floor(Math.random()*rps.length);
     return rps[choice];
 }
-function win(){
-    if(yourScore  == 5){
-        alert("You win!");
-    }
-    if(compScore  == 5){
-        alert("You lose!");
-    }
-}
+
 function playRound(playerSelection, computerSelection){
     x = playerSelection.toLowerCase();
     y = computerSelection;
@@ -71,6 +64,8 @@ sButton.addEventListener("click", function(){
     computerScore.innerHTML = compScore;
     win();
 })
+
+
 
 
 
