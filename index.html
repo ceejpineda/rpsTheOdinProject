@@ -7,16 +7,29 @@
     </header>
     <body>
         <div class="body">
-        <div class="header"><h1>✊ Rock ✋ Paper ✌️ Scissors</h1></div>
+        <div class="header">
+            <h1>✊ Rock ✋ Paper ✌️ Scissors</h1>
+            <p><a href="https://www.github.com/ceejpineda">@ceejpineda</a> on github</p>
+        </div>
         <div class="main">
+
             <div class="instruction">
                 <h2>Instructions</h2>
-                <p>First to score 5 wins</p>
+                <p>Beat the computer in a game of Rock, Paper, Scissors.</p>
+                <p>First to score to 5 wins!</p>
+            </div>
+
+            <div class="scores">
                 <p>Your Score: <span id="playerScore">0</span></p>
                 <p>Computer Score: <span id="computerScore">0</span></p>
             </div>
-            <div class="choices">
 
+            <div class="battleground">
+                <img class="status" src="./images/paperloss.png">
+                <img class="status" src="./images/rockswin.png">             
+            </div>
+
+            <div class="choices">
                 <div class="rps" id="rock">
                     <button class="button" id="rButton"><img class="img" src="./images/rocks.png"></button>
                 </div>
