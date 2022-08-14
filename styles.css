@@ -19,6 +19,12 @@ a{
     text-decoration: none;
     color: white;
 }
+h1{
+    margin: 20px;
+}
+.battler{
+    text-align: center;
+}
 
 .header{
     background-color: #05445E;
@@ -45,6 +51,8 @@ h2{
 }
 .battleground{
     display: flex;
+    width: 500px;
+    height: 170px;
     justify-content: center;
     border: #189AB4;
     border-width: 5px;
@@ -54,17 +62,24 @@ h2{
     background-color: #05445E;;
 }
 .status{
-    height: 150px;
-    weight: 150px;
+    height: 120px;
+    weight: 120px;
     padding: 20px;
 }
 .footer{
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
     text-align: center;
+    background-color: #189AB4;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
 }
 .img{
-    height: 100px;
-    width: 100px;
-    padding: 20px;
+    height: 70px;
+    width: 70px;
+    padding: 10px;
 }
 .scores{
     padding: 0;
@@ -74,6 +89,10 @@ h2{
 }
 .scores p{
     font-size: 32px;
+}
+p{
+    padding: 0px;
+    margin: 0px;
 }
 button{
     padding: 20px;
