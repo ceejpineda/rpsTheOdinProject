@@ -43,6 +43,24 @@ var computerScore = document.getElementById("computerScore");
 rButton.addEventListener("click", function(){
     x = "rock";
     y = getComputerChoice();
+    if(y == "rock"){
+        document.getElementById("imgComputer").src="./images/rockstie.png";
+        document.getElementById("imgPlayer").src="./images/rockstie.png";
+        document.getElementById("imgComputer").style.visibility="visible";
+        document.getElementById("imgPlayer").style.visibility="visible";
+    }else if(y == "paper")
+    {
+        document.getElementById("imgComputer").src="./images/paperwin.png";
+        document.getElementById("imgPlayer").src="./images/rocksloss.png";
+        document.getElementById("imgComputer").style.visibility="visible";
+        document.getElementById("imgPlayer").style.visibility="visible";
+    }else if(y == "scissors")
+    {
+        document.getElementById("imgComputer").src="./images/scissorsloss.png";
+        document.getElementById("imgPlayer").src="./images/rockswin.png";
+        document.getElementById("imgComputer").style.visibility="visible";
+        document.getElementById("imgPlayer").style.visibility="visible";
+    }
     playRound(x,y);
     playerScore.innerHTML = yourScore;
     computerScore.innerHTML = compScore;
@@ -51,6 +69,24 @@ rButton.addEventListener("click", function(){
 pButton.addEventListener("click", function(){
     x = "paper";
     y = getComputerChoice();
+    if(y == "rock"){
+        document.getElementById("imgComputer").src="./images/rocksloss.png";
+        document.getElementById("imgPlayer").src="./images/paperwin.png";
+        document.getElementById("imgComputer").style.visibility="visible";
+        document.getElementById("imgPlayer").style.visibility="visible";
+    }else if(y == "paper")
+    {
+        document.getElementById("imgComputer").src="./images/papertie.png";
+        document.getElementById("imgPlayer").src="./images/papertie.png";
+        document.getElementById("imgComputer").style.visibility="visible";
+        document.getElementById("imgPlayer").style.visibility="visible";
+    }else if(y == "scissors")
+    {
+        document.getElementById("imgComputer").src="./images/scissorswin.png";
+        document.getElementById("imgPlayer").src="./images/paperloss.png";
+        document.getElementById("imgComputer").style.visibility="visible";
+        document.getElementById("imgPlayer").style.visibility="visible";
+    }
     playRound(x,y);
     playerScore.innerHTML = yourScore;
     computerScore.innerHTML = compScore;
@@ -59,6 +95,24 @@ pButton.addEventListener("click", function(){
 sButton.addEventListener("click", function(){
     x = "scissors";
     y = getComputerChoice();
+    if(y == "rock"){
+        document.getElementById("imgComputer").src="./images/rockswin.png";
+        document.getElementById("imgPlayer").src="./images/scissorsloss.png";
+        document.getElementById("imgComputer").style.visibility="visible";
+        document.getElementById("imgPlayer").style.visibility="visible";
+    }else if(y == "paper")
+    {
+        document.getElementById("imgComputer").src="./images/paperloss.png";
+        document.getElementById("imgPlayer").src="./images/scissorswin.png";
+        document.getElementById("imgComputer").style.visibility="visible";
+        document.getElementById("imgPlayer").style.visibility="visible";
+    }else if(y == "scissors")
+    {
+        document.getElementById("imgComputer").src="./images/scissorstie.png";
+        document.getElementById("imgPlayer").src="./images/scissorstie.png";
+        document.getElementById("imgComputer").style.visibility="visible";
+        document.getElementById("imgPlayer").style.visibility="visible";
+    }
     playRound(x,y);
     playerScore.innerHTML = yourScore;
     computerScore.innerHTML = compScore;
