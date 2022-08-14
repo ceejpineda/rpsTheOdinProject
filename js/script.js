@@ -64,7 +64,7 @@ rButton.addEventListener("click", function(){
     playRound(x,y);
     playerScore.innerHTML = yourScore;
     computerScore.innerHTML = compScore;
-    win();
+    //win();
 })
 pButton.addEventListener("click", function(){
     x = "paper";
@@ -90,7 +90,7 @@ pButton.addEventListener("click", function(){
     playRound(x,y);
     playerScore.innerHTML = yourScore;
     computerScore.innerHTML = compScore;
-    win();
+    //win();
 })
 sButton.addEventListener("click", function(){
     x = "scissors";
@@ -116,9 +116,9 @@ sButton.addEventListener("click", function(){
     playRound(x,y);
     playerScore.innerHTML = yourScore;
     computerScore.innerHTML = compScore;
-    win();
+    //win();
+    end();
 })
-
 
 
 

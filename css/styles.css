@@ -5,7 +5,7 @@ html, body{
 } 
 @font-face {
     font-family: Josefa;
-    src: url(./fonts/JosefinSlab-VariableFont_wght.ttf);
+    src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
 }
 .body{
     font-family: Josefa, sans-serif;
