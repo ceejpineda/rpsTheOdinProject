@@ -34,6 +34,42 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+function end(){
+
+    if(yourScore == 5){
+        Swal.fire({
+            title: 'Victory!',
+            confirmButtonText:'Play Again?',
+            text: 'You have beaten the Computer!',
+            imageUrl: './images/win.gif',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+              location.reload();
+            }
+          })
+        }if(compScore == 5){
+        Swal.fire({
+            title: 'Defeat!',
+            confirmButtonText:'Play Again?',
+            text: 'You have been beaten by the computer!',
+            imageUrl: './images/lose.gif',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          }).then((result) => {
+            if (result.isConfirmed) {
+              location.reload();
+            }
+          })
+        }   
+    }
+
+
+
 var rButton = document.getElementById("rButton");
 var pButton = document.getElementById("pButton");
 var sButton = document.getElementById("sButton");
@@ -64,7 +100,7 @@ rButton.addEventListener("click", function(){
     playRound(x,y);
     playerScore.innerHTML = yourScore;
     computerScore.innerHTML = compScore;
-    //win();
+    end();
 })
 pButton.addEventListener("click", function(){
     x = "paper";
@@ -90,7 +126,7 @@ pButton.addEventListener("click", function(){
     playRound(x,y);
     playerScore.innerHTML = yourScore;
     computerScore.innerHTML = compScore;
-    //win();
+    end();
 })
 sButton.addEventListener("click", function(){
     x = "scissors";
@@ -116,10 +152,6 @@ sButton.addEventListener("click", function(){
     playRound(x,y);
     playerScore.innerHTML = yourScore;
     computerScore.innerHTML = compScore;
-    //win();
     end();
 })
-
-
-
 
