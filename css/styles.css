@@ -124,4 +124,42 @@ button:active{
     margin-top: 50px;
 }
 
-/*  */
+@media screen and (max-width: 800px) {
+    body{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header{
+        margin-bottom: 70px;
+    }
+    .instruction{
+        font-size: 30px;
+    }
+    .h2{
+        font-size: 38px;
+    }
+    .choices{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    .battleground{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+        text-align: center;
+        background-color: #189AB4;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        bottom: 0;
+        position: fixed;
+    }
+}
+
+
