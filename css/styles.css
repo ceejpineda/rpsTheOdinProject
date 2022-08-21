@@ -2,7 +2,12 @@ html, body{
     margin: 0;
     height: 100%;
     background-color: #D4F1F4
-} 
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 @font-face {
     font-family: Josefa;
     src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
@@ -14,18 +19,22 @@ html, body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 2.5vh;
 }
 a{
     text-decoration: none;
     color: white;
 }
-h1{
-    margin: 20px;
-}
 .battler{
     text-align: center;
 }
-
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vh;
+}
 .header{
     background-color: #05445E;
     width: 100%;
@@ -34,16 +43,14 @@ h1{
 }
 .instruction{
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 2vh;
 }
 h2{
-    font-size: 32px;
-    margin-bottom: 5px;
+    font-size: 3.2vh;
 }
 .choices{
     display: flex;
-    gap: 24px;
+    gap: 2vw;
 }
 .rps{
     display: flex;
@@ -53,21 +60,20 @@ h2{
 }
 .battleground{
     display: flex;
-    width: 500px;
-    height: 170px;
+    width: 60vh;
+    height: 20vh;
     justify-content: center;
     border: #189AB4;
     border-width: 5px;
     border-style: dashed;
-    margin-bottom: 24px;
-    border-radius: 50px;
+    border-radius: 5vh;
     background-color: #05445E;;
-    align-items: cen;
+    align-items: center;
 }
 .status{
-    height: 120px;
-    weight: 120px;
-    padding: 20px;
+    height: 15vh;
+    width: auto;
+    padding: 2.5vh;
     transition-delay: 0.5s ease-in;
 }
 #imgPlayer, #imgComputer{
@@ -81,85 +87,47 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 0px;
-    bottom: 0;
-    position: fixed;
 }
 .img{
-    height: 70px;
-    width: 70px;
-    padding: 10px;
+    height: 9vh;
+    width: auto;
 }
 .scores{
     padding: 0;
     display: flex;
-    gap: 50px;
+    gap: 7vw;
     justify-content: center;
 }
 .scores p{
-    font-size: 32px;
+    font-size: 3vh;
 }
 p{
     padding: 0px;
     margin: 0px;
 }
 button{
-    padding: 20px;
+    padding: 2.5vh;
     border-radius: 20px;
     border-style: dotted;
     border-color:#189AB4;
-    box-shadow:5px 10px #05445E;
+    box-shadow:4px 6px #05445E;
     background-color: #75E6DA;
     transition: all 50ms ease-in-out;
 }
 button:hover{
     background-color: #52a39b;
+    box-shadow:10px 15px #05445E;
     cursor:pointer;    
 }
 button:active{
-    transform: scale(0.8);
-    box-shadow: 4px 4px #05445E;;
+    transform: scale(0.9);
 }
 
 .content{
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
 }
 
-@media screen and (max-width: 800px) {
-    body{
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header{
-        margin-bottom: 70px;
-    }
-    .instruction{
-        font-size: 30px;
-    }
-    .h2{
-        font-size: 38px;
-    }
-    .choices{
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-    }
-    .battleground{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    .footer{
-        width: 100%;
-        text-align: center;
-        background-color: #189AB4;
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-        bottom: 0;
-        position: fixed;
-    }
-}
 
 
